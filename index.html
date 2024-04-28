@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Products</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+        .header { background: #f7f7f7; color: #444; padding: 10px 20px; text-align: center; }
+        .nav { padding: 0; list-style: none; text-align: center; }
+        .nav li { display: inline; margin: 0 15px; }
+        .nav a { text-decoration: none; color: #444; font-weight: bold; }
+        .container { padding: 20px; }
+        .footer { background: #f7f7f7; color: #444; text-align: center; padding: 10px 20px; position: fixed; bottom: 0; width: 100%; }
+        form { background: #fff; padding: 20px; margin-top: 20px; }
+        input, button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Wellness & Self-Care</h1>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div class="container" id="home">
+        <img src="wellness_product.jpg" alt="Wellness Products" style="width:100%;max-width:300px;display:block;margin:auto;">
+        <p>Discover our range of wellness and self-care products designed to help you live a more balanced and fulfilling life.</p>
+    </div>
+
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        <!-- Product details -->
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality wellness products that promote a healthy lifestyle.</p>
+    </div>
+
+    <div class="container">
+        <h3>Contact Us</h3>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Wellness Products. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            alert("Thank you for contacting us!");
+        });
+    </script>
+
+</body>
+</html>
