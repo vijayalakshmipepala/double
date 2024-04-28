@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <style>
-        body { font-family: Arial, sans-serif; color: #000; background: #fff; } /* High contrast colors */
+        body { font-family: Arial, sans-serif; color: #000; background: #fff; } /* High contrast colors for better visibility */
         .container { padding: 20px; }
         label { display: block; margin: 10px 0; font-weight: bold; }
-        input, textarea, button { width: 100%; padding: 8px; margin-bottom: 20px; }
-        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
-        button:hover { background-color: #0056b3; }
+        input, textarea { width: 100%; padding: 8px; margin-bottom: 20px; box-sizing: border-box; }
+        button { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; }
+        button:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
@@ -33,7 +33,7 @@
 
 <script>
     document.getElementById("contactForm").addEventListener("submit", function(event){
-        event.preventDefault(); // Prevents form from submitting
+        event.preventDefault(); // Prevents the actual form submission
         alert("Thank you for contacting us!");
     });
 </script>
